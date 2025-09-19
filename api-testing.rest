@@ -3,19 +3,19 @@
 ### Get the message: Hello World!
 GET http://localhost:3000/
 
-### Get all the users
-GET http://localhost:3000/users
+### Get all the contacts
+GET http://localhost:3000/contacts
 
-### Get user by ID
-GET http://localhost:3000/users/66feda6634acaf25fc843242
+### Get contact by ID
+GET http://localhost:3000/contacts/66feda6634acaf25fc843242
 
-### Create a new user
-POST http://localhost:3000/users
+### Create a new contact
+POST http://localhost:3000/contacts
 Content-Type: application/json
 
 {
   "email": "test4@test.com",
-  "username": "test4@test.com",
+  "contactname": "test4@test.com",
   "name": "Hello4",
   "ipaddress": "94.121.16.56"
 }
@@ -25,8 +25,8 @@ Content-Type: application/json
 ### Get the message: Hello World!
 GET https://cse-341-project1-7a6g.onrender.com
 
-### Get all the users
-GET https://cse-341-project1-7a6g.onrender.com/users
+### Get all the contacts
+GET https://cse-341-project1-7a6g.onrender.com/contacts
 
-### Get user by ID
-GET https://cse-341-project1-7a6g.onrender.com/users/66feda6634acaf25fc843242
+### Get contact by ID
+GET https://cse-341-project1-7a6g.onrender.com/contacts/66feda6634acaf25fc843242

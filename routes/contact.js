@@ -1,20 +1,20 @@
 const express = require('express');
 const router = express.Router();
-const user = require('../controllers/user');
+const contact = require('../controllers/contacts');
 
-router.get('/:id', user.getSingle);
+router.get('/:id', contact.getSingle);
 
-router.get('/', user.getAll);
+router.get('/', contact.getAll);
 
 /**
  * @swagger
- * /users:
+ * /contacts:
  *   get:
- *     summary: Get all users
- *     tags: [Users]
+ *     summary: Get all contacts
+ *     tags: [contacts]
  *     responses:
  *       200:
- *         description: List of users
+ *         description: List of contacts
  *         content:
  *           application/json:
  *             schema:
@@ -25,6 +25,6 @@ router.get('/', user.getAll);
  *                   name:
  *                     type: string
  */
-router.get('/', user.getSingle);
+router.get('/', contact.getSingle);
 
 module.exports = router;

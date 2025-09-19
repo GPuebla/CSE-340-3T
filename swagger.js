@@ -8,7 +8,7 @@ const options = {
     info: {
       title: 'My API',
       version: '1.0.0',
-      description: 'API for managing users and more',
+      description: 'API for managing contacts and more',
     },
     servers: [
       {
