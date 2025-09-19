@@ -25,6 +25,6 @@ router.get('/', contact.getAll);
  *                   name:
  *                     type: string
  */
-router.get('/', contact.getSingle);
+router.get('/', contacts.getSingle);
 
 module.exports = router;
