@@ -25,6 +25,46 @@ router.get('/', contact.getAll);
  *                   name:
  *                     type: string
  */
-router.get('/', contacts.getSingle);
+
+router.get('/', contact.getSingle);
+
+/**
+ * @swagger
+ * /contacts/{id}:
+ *   get:
+ *     summary: Get a single contact by ID
+ *     tags: [contacts]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: The ID of the contact to retrieve
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: A single contact
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 _id:
+ *                   type: string
+ *                 firstName:
+ *                   type: string
+ *                 lastName:
+ *                   type: string
+ *                 email:
+ *                   type: string
+ *                 favoriteColor:
+ *                   type: string
+ *                 birthday:
+ *                   type: string
+ *       404:
+ *         description: Contact not found
+ *       500:
+ *         description: Server error
+ */
 
 module.exports = router;
