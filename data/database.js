@@ -11,12 +11,16 @@ const initDb = (callback) => {
     return callback(null, database);
   }
 
-  MongoClient.connect(process.env.MONGODB_URL, { useUnifiedTopology: true })
+  MongoClient.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((client) => {
-      database = client.db();
-      callback(null, database);
+      database = client.db(); 
+      console.log('Database connected successfully');
+      callback(null, database); 
     })
-    .catch((err) => callback(err));
+    .catch((err) => {
+      console.error('Failed to connect to MongoDB', err);
+      callback(err);
+    });
 };
 
 const getDatabase = () => {
