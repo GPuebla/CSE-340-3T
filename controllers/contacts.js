@@ -19,3 +19,9 @@ const getSingle = async (req, res) => {
     res.status(200).json(contacts[0]);
   });
 };
+
+
+module.exports = {
+  getAll,
+  getSingle
+};
