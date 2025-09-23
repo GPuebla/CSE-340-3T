@@ -2,6 +2,7 @@ const express = require('express');
 const mongodb = require('./data/database');
 const dotenv = require('dotenv');
 const routes = require('./routes');
+const cors = require('cors');
 
 const { swaggerUi, specs } = require('./swagger');
 
@@ -9,6 +10,8 @@ const { swaggerUi, specs } = require('./swagger');
 
 dotenv.config();
 const app = express();
+
+app.use(cors()); 
 
 app.use(express.json());
 app.use('/', routes);
