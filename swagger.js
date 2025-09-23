@@ -17,6 +17,9 @@ const options = {
       {
         url: 'https://cse341-t3-lv-1-w2.onrender.com/api',
       },
+      {
+        url:'https://cse341-t3-lv.onrender.com/api/'
+      },
     ],
   },
   apis: ['./routes/*.js'],

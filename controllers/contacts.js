@@ -20,8 +20,29 @@ const getSingle = async (req, res) => {
   });
 };
 
+const deleteContact = async (req, res) => {
+  try {
+    const contactId = new ObjectId(req.params.id);
+
+    const result = await mongodb
+      .getDatabase()
+      .collection('Contacts')
+      .deleteOne({ _id: contactId });
+
+    if (result.deletedCount === 1) {
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json({ message: 'Contact successfully deleted' });
+    } else {
+      res.status(404).json({ message: 'Contact not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: 'Error deleting contact', error: error.message });
+  }
+};
+
 
 module.exports = {
   getAll,
-  getSingle
+  getSingle,
+  deleteContact
 };
