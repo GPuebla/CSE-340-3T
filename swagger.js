@@ -14,9 +14,12 @@ const options = {
       {
         url: 'http://localhost:3000/api',
       },
+      {
+        url: 'https://cse341-t3-lv.onrender.com/api',
+      },
     ],
   },
-  apis: ['./routes/*.js'], // busca los comentarios JSDoc en tus archivos de rutas
+  apis: ['./routes/*.js'],
 };
 
 const specs = swaggerJsdoc(options);

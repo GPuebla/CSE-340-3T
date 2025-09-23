@@ -24,10 +24,10 @@ Content-Type: application/json
 ### RENDER
 
 ### Get the message: Hello World!
-GET https://cse-341-project1-7a6g.onrender.com
+GET https://cse341-t3-lv.onrender.com
 
 ### Get all the contacts
-GET https://cse-341-project1-7a6g.onrender.com/contacts
+GET https://cse341-t3-lv.onrender.com/contacts
 
 ### Get contact by ID
-GET https://cse-341-project1-7a6g.onrender.com/contacts/66feda6634acaf25fc843242
+GET https://cse341-t3-lv.onrender.com/contacts/68cd93fc56eb35fd1106f9f8
