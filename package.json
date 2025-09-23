@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GPuebla/CSE-341-P1.git"
+    "url": "git+https://github.com/GPuebla/CSE341-T3-LV.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GPuebla/CSE-341-P1/issues"
+    "url": "https://github.com/GPuebla/CSE341-T3-LV/issues"
   },
-  "homepage": "https://github.com/GPuebla/CSE-341-P1#readme",
+  "homepage": "https://github.com/GPuebla/CSE341-T3-LV#readme",
   "dependencies": {
     "cors": "^2.8.5", 
     "dotenv": "^17.2.0",
