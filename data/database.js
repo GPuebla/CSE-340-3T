@@ -13,7 +13,7 @@ const initDb = (callback) => {
 
   MongoClient.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((client) => {
-      database = client.db(); 
+      database = client.db("CSE_341_DB"); 
       console.log('Database connected successfully');
       callback(null, database); 
     })

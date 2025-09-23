@@ -7,17 +7,18 @@ GET http://localhost:3000/
 GET http://localhost:3000/contacts
 
 ### Get contact by ID
-GET http://localhost:3000/contacts/66feda6634acaf25fc843242
+GET http://localhost:3000/contacts/68cd94b356eb35fd1106f9fc
 
 ### Create a new contact
 POST http://localhost:3000/contacts
 Content-Type: application/json
 
 {
-  "email": "test4@test.com",
-  "contactname": "test4@test.com",
-  "name": "Hello4",
-  "ipaddress": "94.121.16.56"
+    "firstName": "Gabriel",
+    "lastName": "Rodríguez",
+    "email": "gabriel.rodriguez@email.com",
+    "favoriteColor": "Gris",
+    "birthday": "1999-10-30"
 }
 
 ### RENDER
