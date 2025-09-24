@@ -24,16 +24,16 @@ Content-Type: application/json
 ### RENDER
 
 ### Get the message: Hello World!
-GET https://cse341-t3-lv.onrender.com
+GET https://cse341-t3-lv-1-w2.onrender.com
 
 ### Get all the contacts
-GET https://cse341-t3-lv.onrender.com/api/contacts
+GET https://cse341-t3-lv-1-w2.onrender.com/api/contacts
 
 ### Get contact by ID
-GET https://cse341-t3-lv.onrender.com/api/contacts/68cd93fc56eb35fd1106f9f8
+GET https://cse341-t3-lv-1-w2.onrender.com/api/contacts/68cd93fc56eb35fd1106f9f8
 
 ### Create a new contact
-POST https://cse341-t3-lv.onrender.com/api/contacts
+POST https://cse341-t3-lv-1-w2.onrender.com/api/contacts
 Content-Type: application/json
 
 {
@@ -45,17 +45,17 @@ Content-Type: application/json
 }
 
 ### Update a contact
-PUT https://cse341-t3-lv.onrender.com/api/contacts/68cd93fc56eb35fd1106f9f8
+PUT https://cse341-t3-lv-1-w2.onrender.com/api/contacts/68d454ed7cc05d69db61ddde
 Content-Type: application/json
 
 {
     "firstName": "Gabriel",
     "lastName": "Rodríguez",
     "email": "gabriel.rodriguez@email.com",
-    "favoriteColor": "Gris",
+    "favoriteColor": "Marron",
     "birthday": "1999-10-30"
 }
 
 ### Delete a contact
-DELETE https://cse341-t3-lv.onrender.com/api/contacts/68cd93fc56eb35fd1106f9f8
+DELETE https://cse341-t3-lv-1-w2.onrender.com/api/contacts/68cd94b356eb35fd1106f9fc
 Content-Type: application/json
